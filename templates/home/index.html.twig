@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Bienvenue - {{parent()}}
+{% endblock %}
+
+{% block body %}
+
+<div class="menu">
+    <div class="menu_sec" id="menu_sec">
+
+        {% for menu in menus %}
+            <div class="card">
+                <img src="{{asset('img/' ~ menu.picture)}} " alt="Food" loading="lazy" >
+                <h5>{{menu.name}} </h5>
+            </div>
+        {% endfor %}
+
+        <h5 class="border"></h5>
+    </div>
+
+    <img src="{{asset('img/arrow.png')}} " alt="arrow" class="left_arrow" id="left_arrow">
+    <img src="{{asset('img/arrow.png')}} " alt="arrow" class="right_arrow" id="right_arrow">
+    <h4>Menu</h4>
+</div>
+
+{# cards box start #}
+<div class="card_bx"></div>
+{% endblock %}
