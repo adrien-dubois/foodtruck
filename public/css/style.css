@@ -272,6 +272,7 @@ header .red_box{
 
 /* ------------------ MAIN  ------------------- */
 
+/* MENUS SLIDE */
 .menu{
     position: relative;
     width: 50%;
@@ -359,11 +360,17 @@ header .red_box{
     box-shadow: none;
 }
 
+/* CARDS BOX */
+
 .card_bx{
     position: relative;
     width: 100%;
     height: 500px;
     background: linear-gradient(0deg, #F2DFD1, rgb(243,210,183));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
     overflow: hidden;
     z-index: 2;
 }
@@ -378,4 +385,49 @@ header .red_box{
     top: -10px;
     left: -90px;
     z-index: -1;
+}
+
+.card_bx::after{
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 200px;
+    background: rgb(105, 105, 105, 0.1);
+    border-radius: 50%;
+    top: -15%;
+    right : -7%;
+    z-index: -1;
+}
+
+.card_bx .cards_bx1{
+    width: 65%;
+    height: 75%;
+    border: 1px solid var(--black-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card_bx .cards_bx1 .card{
+    position: relative;
+    width: 280px;
+    height: 170px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    box-shadow: 0px 7px 12px #FFDFBD;
+    background: var(--white-color);
+    color: #282727;
+    overflow: hidden;
+}
+
+.card_bx .cards_bx1 .card_b{
+    width: 430px;
+}
+
+.card_bx .cards_bx1 img{
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    right: 0;
 }
