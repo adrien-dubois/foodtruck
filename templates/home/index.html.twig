@@ -6,6 +6,7 @@
 
 {% block body %}
 
+{# MENU BAR #}
 <div class="menu">
     <div class="menu_sec" id="menu_sec">
 
@@ -24,24 +25,106 @@
     <h4>Menu</h4>
 </div>
 
-{# cards box start #}
+{# CARDS BOX #}
 <div class="card_bx">
     <div class="cards_bx1">
+
+        {# CARD 1 #}
         <div class="card card1">
+            <div class="content">
+                <h2>best seller <br> spicy hot one</h2>
+                <p>Un phénomène qui va <br> vous réveiller</p>
+                <h4>7.90€</h4>
+                <div class="dots">
+                    <h2></h2>
+                    <h2></h2>
+                    <h2></h2>
+                    <h2></h2>
+                </div>
+            </div>
             <img src="{{asset('img/card1.png')}} " alt="food" loading="lazy">
         </div>
+
+        {# CARD 2 #}
         <div class="card card2">
+            <div class="content">
+                <h2>100% fait maison <br> big cookies</h2>
+                <p>tout juste sortis du four <br> bien croustillants</p>
+                <h4>4.90€</h4>
+            </div>
             <img src="{{asset('img/card2.png')}} " alt="food" loading="lazy">
         </div>
+
+        {# CARD 3 #}
         <div class="card card3">
+            <div class="content">
+                <h2>Trouver notre<br> food truck <br> près de chez <br> vous </h2>
+                <button>GO &#8594;</button>
+            </div>
             <img src="{{asset('img/card3.png')}} " alt="food" loading="lazy">
         </div>
+
+        {# CARD 4 #}
         <div class="card card4 card_b">
-            <img src="" alt="">
+            <div class="content">
+                <h2>une vraie cuisine <br> une vraie passion <br> un vrai chef</h2>
+                <a href="#">100% produits frais</a>
+            </div>
+            <img src="{{asset('img/card4.png')}} " alt="food" loading="lazy">
         </div>
+
+        {# CARD5 #}
         <div class="card card5 card_b">
-            <img src="" alt="">
+            <div class="content">
+                <h2>Envie de <br>faire parti<br>de l'aventure?</h2>
+                <a href="#">Rejoignez-nous...</a>
+            </div>
+            <img src="{{asset('img/card5.png')}} " alt="food" loading="lazy">
         </div>
     </div>
 </div>
+
+{# APP BOX #}
+<div class="app_box">
+    <div class="app_box1">
+        <div class="app_img">
+            <img src="{{asset('img/app.png')}} " alt="App" loading="lazy">
+        </div>
+        <div class="app_content">
+            <h1>Retrouvez nous dès maintenant <br>Sur l'application mobile <br>Dans votre poche</h1>
+            <div class="app_imgs">
+                <a href="#"> <img src="{{asset('img/apple.png')}} " loading="lazy" alt="ios"> </a>
+
+                <a href="#"> <img src="{{asset('img/android.png')}} " loading="lazy" alt="android"> </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# SOCIAL BOX #}
+<div class="social">
+    <div class="social2">
+        <div class="social_box">
+
+            {# TWITTER PART #}
+            <div class="twitter">
+                <img src="{{asset('icon/twitter.png')}} " alt="twitter">
+                <h3>TakoyakiSnoos</h3>
+                <p><span>@EatTheRoad</span> Ipsum enim ex in qui nulla. Consectetur anim aliqua.</p>
+            </div>
+            <div class="twitter">
+                <img src="{{asset('icon/twitter.png')}} " alt="twitter">
+                <h3>JC-Dusse</h3>
+                <p><span>@EatTheRoad</span> Officia fugiat consequat nostrud reprehenderit.</p>
+            </div>
+
+            {# FACEBOOK PART #}
+            <div class="facebook"></div>
+            <div class="facebook"></div>
+            <div class="facebook"></div>
+        </div>
+        <div class="social_video_box"></div>
+    </div>
+</div>
+
 {% endblock %}
