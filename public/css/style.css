@@ -676,7 +676,7 @@ header .red_box{
     position: relative;
     width: 80%;
     height: 100%;
-    border: 1px solid var(--black-color);
+    /* border: 1px solid var(--black-color); */
     margin: auto;
     display: flex;
 }
@@ -685,7 +685,7 @@ header .red_box{
     position: relative;
     width: 50%;
     height: 70%;
-    border: 1px solid var(--black-color);
+    /* border: 1px solid var(--black-color); */
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
@@ -716,7 +716,7 @@ header .red_box{
 
 .social .social2 .social_box .twitter{
     position: relative;
-    width: 260px;
+    width: 270px;
     height: 80px;
     background: var(--white-color);
     border-radius: 20px 10px 10px 10px;
@@ -748,4 +748,128 @@ header .red_box{
 
 .social .social2 .social_box .twitter p span{
     color: #50BFFB;
+}
+
+.social .social2 .social_box .facebook{
+    position: relative;
+    width: 160px;
+    height: 150px;
+    background: var(--white-color);
+    border-radius: 20px 10px 10px 10px;
+    box-shadow: 0px 7px 12px #FFDFBD;
+}
+
+.social .social2 .social_box .facebook img{
+    position: absolute;
+    width: 35px;
+    padding: 8px;
+    background: #2E86DE;
+    border-radius: 50%;
+    box-shadow: 0px 8px 8px #BEDCFB, 8px 0px 8px #BEDCFB;
+    left: 0;
+}
+
+.social .social2 .social_box .facebook h3{
+    font-size: 14px;
+    padding: 8px 0px 10px 50px;
+}
+
+.social .social2 .social_box .facebook p{
+    font-size: 11px;
+    padding: 10px 10px 10px 25px;
+    color: #585858;
+}
+
+.social .social2 .social_box .facebook p span{
+    color: #50BFFB;
+}
+
+.social .social2 .social_box .facebook .insta{
+    background: #EE5353;
+    box-shadow: 0px 8px 8px #FCCCCC, 8px 0px 8px #FCCCCC;
+}
+
+.social .social2 .social_box .facebook .img_box_insta{
+    width: 120px;
+    height: 110px;
+    border-radius: 10px;
+    background: none;
+    padding: 0;
+    box-shadow: unset;
+    margin: 35px 10px 0px 22px;
+}
+
+.social .social2 .social_box .facebook .chicken_box{
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    bottom: 10px;
+    left: 22px;
+    background: rgb(185,185,185,0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+.social .social2 .social_box .facebook h6{
+    color: var(--white-color);
+    text-align: center;
+    padding: 4px 0px;
+    line-height: 12px;
+}
+
+.social .social2 .social_box .facebook h6 span{
+    color: #FFB536;
+}
+
+.social .social2 .social_box .social_dots{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social .social2 .social_box .social_dots h2{
+    width: 15px;
+    height: 6px;
+    border-radius: 10px;
+    background: #FFE18E;
+    margin-right: 5px;
+}
+
+.social .social2 .social_box .social_dots h2:nth-child(1){
+    width: 20px;
+    height: 10px;
+    background: #FFD24A;
+}
+
+.social .social2 .social_video_box .video{
+    position: relative;
+    width: 450px;
+    height: 265px;
+    border: 8px solid var(--white-color);
+    margin-left: 10px;
+    background: var(--black-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social .social2 .social_video_box .video .screen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.social .social2 .social_video_box .video .play{
+    position: absolute;
+    cursor: pointer;
+}
+
+.social .social2 .social_video_box .video .pause{
+    position: absolute;
+    cursor: pointer;
+    display: none;
 }

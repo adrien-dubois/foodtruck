@@ -8,3 +8,26 @@ right_arrow.addEventListener('click', () =>{
 left_arrow.addEventListener('click', () =>{
     menu_sec.scrollLeft -= 115;
 });
+
+let videos = document.getElementsByTagName("video")[0];
+let plays = document.getElementsByClassName("play")[0];
+let pauses = document.getElementsByClassName("pause")[0];
+let screens = document.getElementsByClassName("screen")[0];
+
+plays.addEventListener('click', () =>{
+    videos.play();
+    plays.style.display = "none";
+    screens.style.display = "none";
+    pauses.style.display = "flex";
+})
+pauses.addEventListener('click', () =>{
+    videos.pause();
+    plays.style.display = "flex";
+    screens.style.display = "flex";
+    pauses.style.display = "none";
+})
+videos.addEventListener('ended', () =>{
+    plays.style.display = "flex";
+    screens.style.display = "flex";
+    pauses.style.display = "none";
+})
