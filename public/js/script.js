@@ -43,11 +43,37 @@ const dataload = () => {
     setTimeout(() => {
         sec_title.innerHTML = "Nouveau <br> menu bucket <br> en Promo";
         h6_dot[1].classList.add("head_dots_main");
-        h6_dot[2].classList.add("head_dots_main");
-        h6_dot[3].classList.add("head_dots_main");
-        h6_dot[4].classList.add("head_dots_main");
+        h6_dot[2].classList.remove("head_dots_main");
+        h6_dot[3].classList.remove("head_dots_main");
+        h6_dot[4].classList.remove("head_dots_main");
     }, 0000);
+    
+    setTimeout(() => {
+        sec_title.innerHTML = "Nouveau <br> menu wings <br> à partager";
+        h6_dot[1].classList.remove("head_dots_main");
+        h6_dot[2].classList.add("head_dots_main");
+        h6_dot[3].classList.remove("head_dots_main");
+        h6_dot[4].classList.remove("head_dots_main");
+    }, 3000);
+    
+    setTimeout(() => {
+        sec_title.innerHTML = "menu <br> spicy hot one <br> burger & tenders";
+        h6_dot[1].classList.remove("head_dots_main");
+        h6_dot[2].classList.remove("head_dots_main");
+        h6_dot[3].classList.add("head_dots_main");
+        h6_dot[4].classList.remove("head_dots_main");
+    }, 6000);
+    
+    setTimeout(() => {
+        sec_title.innerHTML = "menu enfant<br>burger ou nuggets<br>dessert & surprise";
+        h6_dot[1].classList.remove("head_dots_main");
+        h6_dot[2].classList.remove("head_dots_main");
+        h6_dot[3].classList.remove("head_dots_main");
+        h6_dot[4].classList.add("head_dots_main");
+    }, 9000);
 }
+
+setInterval(dataload, 12000);
 
 
 dataload();

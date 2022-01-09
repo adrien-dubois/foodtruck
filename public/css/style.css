@@ -188,6 +188,7 @@ header section .left_content_side button:hover{
 
 header section .left_content_side .dots{
     display: flex;
+    align-items: center;
     margin-top: 50px;
 }
 
