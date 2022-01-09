@@ -36,6 +36,7 @@ videos.addEventListener('ended', () =>{
     pauses.style.display = "none";
 })
 
+// HERO CAROUSEL
 const dataload = () => {
     const sec_title = document.getElementById("sec_title");
     const h6_dot = document.getElementsByTagName("h6");
@@ -75,5 +76,14 @@ const dataload = () => {
 
 setInterval(dataload, 12000);
 
-
 dataload();
+
+// MENU MEDIA QUERIES
+
+const menu_icon = document.getElementById("menu_icon");
+const nav_ul_list = document.getElementById("nav_ul_list");
+
+menu_icon.addEventListener('click', () =>{
+    menu_icon.classList.toggle('burger');
+    nav_ul_list.classList.toggle('menu_ul_list_java');
+})

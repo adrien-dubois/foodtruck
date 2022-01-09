@@ -60,6 +60,13 @@ header nav{
     justify-content: space-between;
 }
 
+header .menu_icon{
+    color: var(--white-color);
+    font-size: 35px;
+    transition: all .3s ease-in-out;
+    display: none;
+}
+
 header nav .logo{
     width: 135px;   
 }
