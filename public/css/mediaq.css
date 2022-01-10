@@ -152,10 +152,14 @@
         margin: 8px 0px;
     }
 
+    header nav .logo {
+        margin-right: 40%;
+    }
+
     /* JS CLASSES */
 
     .menu_ul_list_java{
-        right: 3%;
+        right: 10%;
     }
 
     header .burger .svg-inline--fa:nth-child(1){
@@ -163,5 +167,116 @@
     }
     header .burger .svg-inline--fa:nth-child(2){
         display: flex;
+    }
+
+    .card_bx .cards_bx1 {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card_bx .cards_bx1 .card {
+        width: 70%;
+    }
+    .card_bx .cards_bx1 .card:nth-child(5) {
+        width: 80%;
+    }
+    .app_box {
+        height: auto;
+    }
+    .app_box::before {
+        height: 100%;
+        transform: skewX(15deg);
+    }
+    .app_box .app_box1 {
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .app_box .app_box1 .app_img, .app_content {
+        width: 100%;
+        height: 50%;
+    }
+    .app_box .app_box1 .app_content {
+        margin-left: 15%;
+        padding-bottom: 30px;
+    }
+    .social .social2 {
+        flex-wrap: wrap;
+    }
+    .social .social2 .social_box, .social_video_box {
+        width: 100%;
+    }
+    .social .social2 .social_video_box .video {
+        height: 240px;
+    }
+    address {
+        height: 120px;
+    }
+    address .add {
+        flex-wrap: wrap;
+    }
+    address .add .otr-add, .otr-icon {
+        width: 100%;
+        height: 50%;
+    }
+    address .add .otr-icon {
+        width: 100%;
+    }
+
+
+    @media (max-width: 420px){
+        .card_bx .cards_bx1 .card {
+            width: 100%;
+        }
+        .card_bx .cards_bx1 .card:nth-child(5) {
+            width: 100%;
+        }
+        .app_box::before{
+            transform: skewX(0deg);
+        }
+        address .add .otr-add .phone {
+            font-size: 11px;
+        }
+        address .add .otr-add .phone img{
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+
+    @media (max-width: 400px){
+        .app_box .app_box1 .app_img img {
+            width: 80%;
+        }
+        .social .social2 .social_video_box .video {
+            height: 200px;
+        }
+        footer .links .card_footer li a {
+            font-size: 10px;
+        }
+        header nav .user li {
+            margin-left: 1px;
+        }
+        header nav .logo {
+            margin-left: 10%;
+        }
+        header nav .logo {
+            width: 100px;
+            margin-top: -17px;
+        }
+        header section {
+            margin-top: -50px;
+        }
+        .menu .left_arrow, .right_arrow {
+            left: -9%;
+        }
+        footer .links {
+            width: 100%;
+            height: 68%;
+        }
+        footer .foot1 {
+            font-size: 9px;
+        }
+        footer .links .card_footer li{
+            padding: 5px 0px;
+        }
     }
 }
