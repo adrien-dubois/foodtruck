@@ -325,7 +325,7 @@ header .red_box{
 .menu .menu_sec .border{
     position: absolute;
     bottom: 0;
-    left: 31%;
+    left: 28%;
     background: #F02328;
     width: 110px;
     height: 5px;
@@ -689,11 +689,12 @@ header .red_box{
     /* border: 1px solid var(--black-color); */
     margin: auto;
     display: flex;
+    justify-content: center;
 }
 
 .social .social2 .social_box, .social_video_box{
     position: relative;
-    width: 50%;
+    width: 45%;
     height: 70%;
     /* border: 1px solid var(--black-color); */
     margin-top: 100px;
@@ -762,7 +763,7 @@ header .red_box{
 
 .social .social2 .social_box .facebook{
     position: relative;
-    width: 160px;
+    width: 180px;
     height: 150px;
     background: var(--white-color);
     border-radius: 20px 10px 10px 10px;
